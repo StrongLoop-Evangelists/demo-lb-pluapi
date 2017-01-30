@@ -1,0 +1,70 @@
+{
+  "name": "Codes",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "PLU": {
+      "type": "number",
+      "required": true,
+      "id": true
+    },
+    "category": {
+      "type": "string"
+    },
+    "commodity": {
+      "type": "string",
+      "required": true
+    },
+    "variety": {
+      "type": "string"
+    },
+    "varietyInfo": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "NASize": {
+      "type": "string"
+    },
+    "rowSize": {
+      "type": "string"
+    },
+    "restrictions": {
+      "type": "string"
+    },
+    "AKA": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "trademark": {
+      "type": "string"
+    },
+    "botanicalName": {
+      "type": "string"
+    },
+    "revisionDate": {
+      "type": "date"
+    },
+    "dateAdded": {
+      "type": "date",
+      "required": true
+    },
+    "GPC": {
+      "type": "number",
+      "required": true
+    },
+    "image": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
