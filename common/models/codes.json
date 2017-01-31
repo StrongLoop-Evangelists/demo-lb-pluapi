@@ -15,8 +15,7 @@
       "type": "string"
     },
     "commodity": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "variety": {
       "type": "string"
@@ -52,8 +51,7 @@
       "type": "date"
     },
     "dateAdded": {
-      "type": "date",
-      "required": true
+      "type": "date"
     },
     "GPC": {
       "type": "number",

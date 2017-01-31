@@ -52,8 +52,7 @@ And here's how the model looks after using the `lb model` dialog (NOTE! key name
       "type": "string"
     },
     "commodity": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "variety": {
       "type": "string"
@@ -89,8 +88,7 @@ And here's how the model looks after using the `lb model` dialog (NOTE! key name
       "type": "date"
     },
     "dateAdded": {
-      "type": "date",
-      "required": true
+      "type": "date"
     },
     "GPC": {
       "type": "number",
