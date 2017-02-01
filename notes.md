@@ -13,7 +13,17 @@ Thanks to [Jeremy Singer-Vine](https://twitter.com/jsvine)'s wonderful [Data Is 
 1. `npm install –g loopback-cli`
 2. `lb -l` for commands
 3. `lb app`	
+4. `lb datasource` (see below)
 4. `lb model` (see below)
+
+##datasource
+* make sure you have a local Mongo running
+* `lb datasource`
+* name your datasource 'mongo'
+* select the 'MongoDB (supported by StrongLoop)' connector
+* enter `mongodb://localhost:27017/test` as your connection string
+* skip the `host, port, user, password`, and `database` entries
+* answer yes to `Install loopback-connector-mongodb@^1.4?`
 
 ##model
 Here's a sample record of PLU Codes data: 
@@ -101,15 +111,9 @@ And here's how the model looks after using the `lb model` dialog (NOTE! key name
 ```
 ###more notes on models:
 * if you set ` "idInjection": true` and don't have an explicit `"id": true` on any property, Loopback will add an id property for you and add an id to any record POSTed.
+* for this example, `idInjection` is set to `false` and `PLU` is given a property of `"id": true`. This will make `PLU` the id property for Mongo and for endpoints such as `http://0.0.0.0:3000/api/PLUs/3001` (where `3001` is the PLU code). 
 
-##datasource
-* make sure you have a local Mongo running
-* `lb datasource`
-* name your datasource 'mongo'
-* select the 'MongoDB (supported by StrongLoop)' connector
-* enter `mongodb://localhost:27017/test` as your connection string
-* skip the `host, port, user, password`, and `database` entries
-* answer yes to `Install loopback-connector-mongodb@^1.4?`
+
 
 ##run
 * for debug mode: `DEBUG=loopback:connector:mongodb node .`
