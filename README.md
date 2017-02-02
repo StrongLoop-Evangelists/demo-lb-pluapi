@@ -125,3 +125,6 @@ And here's how the model looks after using the `lb model` dialog (NOTE! key name
 ##interact
 * to open the Explorer: `http://0.0.0.0:3000/explorer`
 
+##presented at
+* DonutJS 31 Jan 2017 [slides](http://www.slideshare.net/emckean/mckeanpluapidonutjs)
+
